@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.log.*
+logs/
+*.egg-info/
+dist/
+build/
+.env
+.openclaw/
+workspace/

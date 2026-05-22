@@ -1,0 +1,28 @@
+# Ambiente: Python 3.14+ (Windows amd64) — venv em projetos/colapso/venv
+#
+# Instalação recomendada (PowerShell):
+#   cd D:\NewWorkspace01\projetos\colapso
+#   python -m venv venv
+#   .\venv\Scripts\Activate.ps1
+#   python -m pip install -U pip setuptools wheel
+#   .\scripts\setup_venv.ps1
+#
+# Se pip falhar no scipy com erro SSL, o script setup_venv.ps1 reinstala scipy isolado.
+# Bot HFT só precisa de MetaTrader5 + numpy (ver requirements-hft-bot.txt).
+
+# --- HFT Bot (hft_bot/) ---
+MetaTrader5>=5.0.45
+numpy>=1.26.0,<3
+
+# --- Workspace (auditorias, dashboard, Polymarket — opcional para rodar só o bot) ---
+fastapi>=0.136.0
+uvicorn>=0.47.0
+pandas>=3.0.0
+scipy>=1.17.0
+psutil>=7.0.0
+py-clob-client>=0.34.0
+python-dotenv>=1.0.0
+requests>=2.32.0
+
+# --- Desenvolvimento / testes ---
+pytest>=9.0.0

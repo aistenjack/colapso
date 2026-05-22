@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pip_log.txt
+hft_bot/config/user_config.json
+*.log
+*.log.*
+logs/
+*.txt
+!requirements.txt
+!requirements-hft-bot.txt
+*.egg-info/
+dist/
+build/
+.env

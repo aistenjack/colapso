@@ -1,0 +1,6 @@
+# Dependências mínimas para rodar apenas o bot (hft_bot/).
+# Uso: pip install -r requirements-hft-bot.txt
+
+MetaTrader5>=5.0.45
+numpy>=1.26.0,<3
+pytest>=9.0.0
