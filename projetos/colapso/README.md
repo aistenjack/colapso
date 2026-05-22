@@ -130,10 +130,22 @@ colapso/
 │   │   ├── test_reentry_gate.py              # 8 testes
 │   │   ├── test_micro_structure_reentry.py   # 17 testes
 │   │   └── bench_micro_structure.py          # Benchmark performance
-│   ├── audit_speed_filter_math.py            # Replay M0–M3 determinístico
-│   ├── audit_mt5_deals.py                    # Scripts de auditoria pós-sessão
-│   ├── requirements.txt                      # MetaTrader5, numpy
-│   └── *.md                                   # Documentação de governança
+│   ├── docs/                                  # Documentação de governança
+│   │   ├── ARCHITECTURE.md
+│   │   ├── STATE.md
+│   │   ├── HANDOFF.md
+│   │   ├── ROADMAP.md
+│   │   ├── TEST_MATRIX.md
+│   │   ├── Leia_primeiro.md
+│   │   └── RELATORIO_SPEED_FILTER_FASE4.md
+│   ├── audit/                                 # Scripts e saídas de auditoria
+│   │   ├── audit_speed_filter_math.py         # Replay M0–M3 determinístico
+│   │   ├── audit_mt5_deals.py                 # Auditoria pós-sessão MT5 deals
+│   │   ├── audit_*.py                         # Outros scripts de auditoria
+│   │   └── audit_*.txt                        # Saídas (não versionadas)
+│   ├── logs/                                  # Logs runtime (não versionado)
+│   ├── requirements.txt                       # MetaTrader5, numpy
+│   └── .gitignore
 ├── requirements.txt                           # Deps amplas (não reflete só o bot)
 ├── venv/                                      # Python 3.14 (não versionado)
 └── .gitignore
@@ -421,13 +433,13 @@ Todos os módulos core implementados, M1-M8 bugs corrigidos, DEMO-ready.
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| `ARCHITECTURE.md` | Princípios, regras de performance/execução/netting/risco |
-| `STATE.md` | Estado atual detalhado (~1769 linhas), mudanças V12.14, invariants |
-| `HANDOFF.md` | Arquitetura, inventário IPC, thread model, 11 invariants |
-| `TEST_MATRIX.md` | 82+ testes, métricas por versão, checklist regressão |
-| `ROADMAP.md` | V1-V4, V2 candidatos, DO NOT IMPLEMENT |
-| `RELATORIO_SPEED_FILTER_FASE4.md` | Causa raiz SpeedFilter, evidência, replay M0-M3, correção |
-| `Leia_primeiro.md` | Regras de ouro antes de implementar |
+| `docs/ARCHITECTURE.md` | Princípios, regras de performance/execução/netting/risco |
+| `docs/STATE.md` | Estado atual detalhado (~1769 linhas), mudanças V12.14, invariants |
+| `docs/HANDOFF.md` | Arquitetura, inventário IPC, thread model, 11 invariants |
+| `docs/TEST_MATRIX.md` | 82+ testes, métricas por versão, checklist regressão |
+| `docs/ROADMAP.md` | V1-V4, V2 candidatos, DO NOT IMPLEMENT |
+| `docs/RELATORIO_SPEED_FILTER_FASE4.md` | Causa raiz SpeedFilter, evidência, replay M0-M3, correção |
+| `docs/Leia_primeiro.md` | Regras de ouro antes de implementar |
 
 ---
 

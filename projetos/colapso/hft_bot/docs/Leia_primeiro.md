@@ -1,8 +1,8 @@
 Leia primeiro:
 
-* ARCHITECTURE.md
-* ROADMAP.md
-* STATE.md
+* docs/ARCHITECTURE.md
+* docs/ROADMAP.md
+* docs/STATE.md
 
 NÃO implemente nada antes de entender:
 
@@ -35,4 +35,4 @@ Antes de criar código:
 
 Após concluir qualquer alteração:
 
-* atualize STATE.md
+* atualize docs/STATE.md

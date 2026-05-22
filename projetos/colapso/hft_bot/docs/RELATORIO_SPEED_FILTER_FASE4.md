@@ -69,7 +69,7 @@ Após corrigir path-speed, zigzag passava como “rápido” sem progresso líqu
 | `config/settings.py` | `speed_window_ms=500` (sem mudar thresholds) |
 | `main.py` | passa `speed_window_ms` ao `SpeedFilter` |
 | `tests/test_speed_filter_timestamp.py` | regressão timestamp + path |
-| `audit_speed_filter_math.py` | replay M0–M3 |
+| `audit/audit_speed_filter_math.py` | replay M0–M3 |
 
 ---
 
@@ -77,9 +77,9 @@ Após corrigir path-speed, zigzag passava como “rápido” sem progresso líqu
 
 ```bash
 git diff --stat hft_bot/core/tick_engine.py hft_bot/core/speed_filter.py \
-  hft_bot/config/settings.py hft_bot/main.py \
-  hft_bot/tests/test_speed_filter_timestamp.py \
-  hft_bot/audit_speed_filter_math.py
+hft_bot/config/settings.py hft_bot/main.py \
+hft_bot/tests/test_speed_filter_timestamp.py \
+hft_bot/audit/audit_speed_filter_math.py
 ```
 
 Pontos-chave do diff:
